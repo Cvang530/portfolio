@@ -3,6 +3,8 @@ import HeaderSection from './Components/headers'
 import Navbar from './Components/navBar'
 import AboutSection from './Components/aboutSection'
 import ProjectSection from './Components/projectSection'
+import ContactSection from './Components/contactSection'
+import Footer from './Components/footer'
 
 export default function Home() {
   return (
@@ -15,7 +17,9 @@ export default function Home() {
           <HeaderSection />
           <AboutSection />
           <ProjectSection />
+          <ContactSection />
         </div>
+        <Footer />
       {/* </section> */}
     </main>
   )
