@@ -26,6 +26,7 @@ const TAB_DATA = [
             <ul className='list-disc pl-2'>
                 <li> Hack Reactor | Software Engineering Immersive Program </li>
                 <li> California State University | Sacramento </li>
+                <li> Butte College </li>
                 <li> Coastal Carolina Community College </li>
             </ul>
         )
@@ -35,7 +36,8 @@ const TAB_DATA = [
         id: "certifications",
         content: (
             <ul className='list-disc pl-2'>
-                <li> Hack Reactor </li>
+                <li> Software Engineering Certificate | Hack Reactor </li>
+                <li> Associate Degree | Mathematics </li>
             </ul>
         )
     },
@@ -52,10 +54,10 @@ const AboutSection = () => {
     };
 
   return (
-    <section className='text-white'>
+    <section className='text-white' id="about">
         <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
             <Image
-                src='/images/portrait.jpg'
+                src='/images/portrait.png'
                 alt='portrait'
                 width={275}
                 height={275}
@@ -63,26 +65,19 @@ const AboutSection = () => {
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full bg-[#121212] bg-opacity-75'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg text-justify'>
-                    Hello! I'm Chong Vang, a passionate and motivated beginner software engineer and web developer. I have always been fascinated by the ever-evolving world of technology,
-                    and I am excited to embark on a journey to create innovative and user-friendly solutions that make a positive impact on people's lives.
+                    Greetings! I'm Chong Vang, an enthusiastic and driven software engineer and web developer with an unwavering passion for technology.
+                    Since my earliest encounters with this ever-evolving industry, I've been captivated by its potential to transform our world for the better.
                     <br></br>
-                    My journey in the world of software development began with a strong curiosity and a desire to learn. I have a solid foundation in programming languages like HTML, CSS, and JavaScript,
-                    which I have used to build responsive and visually appealing web applications. I'm constantly expanding my skill set and exploring new technologies to stay up-to-date
-                    with industry trends.
+                    As a developer, my motivation stems from the prospect of tackling real-world challenges as a software engineer. I thrive on the
+                    complexity of translating intricate concepts into elegant, functional, and efficient solutions. Whether it's constructing interactive websites,
+                    optimizing user journeys, or engineering streamlined algorithms, I eagerly embrace new projects and relish the learning process they offer.
                     <br></br>
-                    What drives me as a developer is the opportunity to solve real-world problems through code. I love the challenge of turning complex ideas into elegant,
-                    functional, and efficient solutions. Whether it's building interactive websites, optimizing user experiences, or creating efficient algorithms,
-                    I am always eager to take on new projects and learn from the process.
-                    <br></br>
-                    Collaboration and teamwork are at the core of my approach. I believe in the power of open
-                    communication and collaboration to create superior products. I'm always excited to work with diverse teams, share knowledge, and learn from others to enhance my
-                    skills further.
-                    <br></br>
-                    Outside of coding, I enjoy staying active, reading about tech trends, and attending hackathons and coding meetups. I'm a firm believer in the importance
-                    of continuous learning and self-improvement, and I'm excited about the endless possibilities the tech world has to offer.
+                    Collaboration and teamwork lie at the heart of my approach to development. I firmly believe that open communication and cooperative efforts are the
+                    keys to crafting superior products. I relish the opportunity to work alongside diverse teams, exchange knowledge, and draw insights from others to
+                    further refine my skills.
                     <br></br>
                     Thank you for visiting my portfolio and getting to know me better. I'm looking forward to connecting with fellow developers, learning from experienced professionals,
-                    and contributing my skills to exciting projects. If you're interested in collaborating or have any questions, please feel free to reach out.
+                    and contributing my skills to exciting projects. If you're interested in collaborating or have any questions, please feel free to reach out through Linkedin.
                     Let's create something amazing together!
                 </p>
                 <div className='flex flex-row justify-start mt-8'>
