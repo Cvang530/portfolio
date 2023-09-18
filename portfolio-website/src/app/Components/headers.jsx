@@ -2,11 +2,17 @@
 import React from "react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+
 
 const HeaderSection = () => {
     return (
-    <section className="lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12">
+    <section className="lg:py-16" id="landing-page">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="grid grid-cols-1 lg:grid-cols-12">
             <div className="col-span-8 place-self-center text-center sm:text-left justify-self-start">
                 <h1 className='text-white mb-4 text4xl sm:text-5xl lg:text-7xl lg:leading-normal font-extrabold'>
                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-700 to-pink-700">
@@ -17,7 +23,7 @@ const HeaderSection = () => {
                 sequence={[
                     'My Name is Chong Vang',
                     1000,
-                    'Aspiring Software Engineer',
+                    'Software Engineer',
                     1000,
                     'Web Developer',
                     1000,
@@ -28,16 +34,9 @@ const HeaderSection = () => {
                 />
                 </h1>
                 <p className="text-[#ADB7BE] text-lg sm:text-lg mb-6 lg:text-xl">
-                    asdlkjaciopaohakmsclkmnk asjhciuahasjcknbj kjahscjkash
+                USMC Veteran and Real Estate Entrepreneur actively seeking new opportunities to expand my presence in the real estate industry.
+                Currently, I'm managing a small-scale rental unit, which has deepened my understanding of property management and the real estate market.
                 </p>
-                <div>
-                    <button className="px-6 py-3 w-full rounded-full sm:w-fit mr-4 bg-gradient-to-br from-blue-400 via-purple-700 to-pink-700 hover:bg-slate-200 text-white">
-                        Hire Me
-                    </button>
-                    <button className="px-1 py-1  w-full rounded-full sm:w-fit bg-gradient-to-br from-blue-400 via-purple-700 to-pink-700 hover:bg-slate-800 text-white mt-3">
-                        <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
-                    </button>
-                </div>
             </div>
             <div className="col-span-4 place-self-center mt-4 lg:mt-0">
                 <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
@@ -50,7 +49,7 @@ const HeaderSection = () => {
                     />
                 </div>
             </div>
-        </div>
+        </motion.div>
     </section>
     )
 }

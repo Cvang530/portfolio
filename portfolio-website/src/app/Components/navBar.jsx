@@ -1,33 +1,34 @@
 'use client';
 import React, { useState } from 'react';
-import Link from 'next/link';
-import NavLink from './navLink';
 import { Bars3Icon, XmarkIcon } from '@heroicons/react/24/solid'
 import MenuOverlay from './menuOverlay';
-
-const NavLinks = [
-    {
-        title: 'About',
-        path: '#about',
-    },
-    {
-        title: 'Projects',
-        path: '#projects',
-    },
-    {
-        title: 'Contact',
-        path: '#contact',
-    },
-]
+import { Link } from 'react-scroll';
+import NavLink from './navLink';
+import Image from 'next/image';
 
 const Navbar = () => {
     const [ navBarOpen, setNavBarOpen ] = useState(false);
 
+    const NavLinks = [
+        {
+            title: 'About',
+            path: '#about',
+        },
+    ]
+
     return (
         <nav className='fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90'>
             <div className='flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-5 py-2'>
-                <Link href={'/'} className='text-2xl md:text-5xl text-white font-semibold'>
-                    LOGO
+            <Image
+                    src="/images/Flag.jpg"
+                    alt="flag"
+                    className='items-left absolute-left'
+                    width={90}
+                    height={50}
+            />
+                <Link to="landing-page"
+                    spy={true} smooth={true} offset={-150} duration={500}
+                    className='text-2xl md:text-5xl text-white font-semibold'>
                 </Link>
                 <div className='mobile-menu block md:hidden'>
                     {
@@ -46,15 +47,9 @@ const Navbar = () => {
                         )
                     }
                 </div>
-                <div className='menu hidden md:block md:w-auto' id='navabr'>
+                <div className='menu hidden md:block md:w-auto'>
                     <ul className='flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0'>
-                        {
-                        NavLinks.map((link, index) => (
-                            <li key={index}>
-                                <NavLink href={link.path} title={link.title} />
-                            </li>
-                        )
-                        )}
+                        <NavLink />
                     </ul>
                 </div>
             </div>
