@@ -35,7 +35,7 @@ const HeaderSection = () => {
                 </h1>
                 <p className="text-[#ADB7BE] text-lg sm:text-lg mb-6 lg:text-xl">
                 USMC Veteran and Real Estate Entrepreneur actively seeking new opportunities to expand my presence in the real estate industry.
-                Currently, I'm managing a small-scale rental unit, which has deepened my understanding of property management and the real estate market.
+                Currently, I am managing a small-scale rental unit, which has deepened my understanding of property management and the real estate market.
                 </p>
             </div>
             <div className="col-span-4 place-self-center mt-4 lg:mt-0">
