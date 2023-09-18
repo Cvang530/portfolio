@@ -6,11 +6,11 @@ const ContactSection = () => {
   return (
     <section className='grid md:grid-cols-2 my-12 md:my12 py-24 gap-4' id="contact">
         <div>
-            <h5 className='text-2xl font-bold text-white my-2'>Let's Connect!</h5>
+            <h5 className='text-2xl font-bold text-white my-2'>Lets Connect!</h5>
             <p className='text-[#ADB7BE] mb-4 max-w-md'>
                 {""}
-                I'm currently looking for new opportunities. Whether you have a question
-                or just want to say hi, I'll try my best to get back at you.
+                I am currently looking for new opportunities. Whether you have a question
+                or just want to say hi, I will try my best to get back at you.
             </p>
             <div className='socials flex flex-row gap-2'>
                 <Link href='https://gitlab.com/Chong.Vang'>

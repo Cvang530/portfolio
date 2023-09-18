@@ -65,20 +65,20 @@ const AboutSection = () => {
             <div className='mt-4 md:mt-0 text-left flex flex-col h-full bg-[#121212] bg-opacity-75'>
                 <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
                 <p className='text-base lg:text-lg text-justify'>
-                    Greetings! I'm Chong Vang, an enthusiastic and driven software engineer and web developer with an unwavering passion for technology.
-                    Since my earliest encounters with this ever-evolving industry, I've been captivated by its potential to transform our world for the better.
+                    Greetings! I am Chong Vang, an enthusiastic and driven software engineer and web developer with an unwavering passion for technology.
+                    Since my earliest encounters with this ever-evolving industry, I have been captivated by its potential to transform our world for the better.
                     <br></br>
                     As a developer, my motivation stems from the prospect of tackling real-world challenges as a software engineer. I thrive on the
-                    complexity of translating intricate concepts into elegant, functional, and efficient solutions. Whether it's constructing interactive websites,
+                    complexity of translating intricate concepts into elegant, functional, and efficient solutions. Whether it is constructing interactive websites,
                     optimizing user journeys, or engineering streamlined algorithms, I eagerly embrace new projects and relish the learning process they offer.
                     <br></br>
                     Collaboration and teamwork lie at the heart of my approach to development. I firmly believe that open communication and cooperative efforts are the
                     keys to crafting superior products. I relish the opportunity to work alongside diverse teams, exchange knowledge, and draw insights from others to
                     further refine my skills.
                     <br></br>
-                    Thank you for visiting my portfolio and getting to know me better. I'm looking forward to connecting with fellow developers, learning from experienced professionals,
-                    and contributing my skills to exciting projects. If you're interested in collaborating or have any questions, please feel free to reach out through Linkedin.
-                    Let's create something amazing together!
+                    Thank you for visiting my portfolio and getting to know me better. I am looking forward to connecting with fellow developers, learning from experienced professionals,
+                    and contributing my skills to exciting projects. If you are interested in collaborating or have any questions, please feel free to reach out through Linkedin.
+                    Lets create something amazing together!
                 </p>
                 <div className='flex flex-row justify-start mt-8'>
                     <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
